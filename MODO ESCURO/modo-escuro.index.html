@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PAG ME</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    
+</head>
+<div class="text"></div>
+<body>
+    <header>
+    <img class="logo" src="./logo-exemplo.png" alt="logo" width="50" height="50">
+        <button onclick="toggleDarkMode()">Modo Escuro</button>
+        <h1 id="typing-text">Titulo</h1>
+    </header>
+    <main class="container">
+        <a href="https://wa.me/5512982572507" target="_blank" class="whatsapp-icon">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        
+        
+    <div id="imagem-lateral"></div>
+    
+        
+        <!--  -->
+            <section class="produts-container">
+                <div class="card">
+                    <div class="product-image" id="img1"></div>
+                    <h3>Calcinha Rosa</h3>
+                    <p>Tamanho P e M</p>
+                    <p>
+                        R$
+                        <span class="bold">25,00</span>
+                    </p>
+                    <a href="https://wa.me/5512991945916" class="btn">Comprar</a>
+                </div>
+                <div class="card">
+                    <div class="product-image" id="img2"></div>
+                    <h3>Compre 7 pague 6</h3>
+                    <p>Tamanho P e M</p>
+                    <p>
+                        R$
+                        <span class="bold">150,00</span>
+                    </p>
+                    <a href="https://wa.me/5512991945916" class="btn">Comprar</a>
+                </div>
+                <div class="card">
+                    <div class="product-image" id="img3"></div>
+                    <h3>Calcinha verde</h3>
+                    <p>Tamanho P e M</p>
+                    <p>
+                        R$
+                        <span class="bold">25,00</span>
+                    </p>
+                    <a href="https://wa.me/5512991945916" class="btn">Comprar</a>
+                </div>
+                <div class="card">
+                    <div class="product-image" id="img4"></div>
+                    <h3>Compre 12 pague 10</h3>
+                    <p>Tamanho P e M</p>
+                    <p>
+                        R$
+                        <span class="bold">250,00</span>
+                    </p>
+                    <a href="https://wa.me/5512991945916" class="btn">Comprar</a>
+                </div>
+                <div class="card">
+                    <div class="product-image" id="img5"></div>
+                    <h3>Calcinha Azul</h3>
+                    <p>Tamanho P e M</p>
+                    <p>
+                        R$
+                        <span class="bold">25,00</span>
+                    </p>
+                    <a href="https://wa.me/5512991945916" class="btn">Comprar</a>
+                </div>
+                <div class="card">
+                    <div class="product-image" id="img6"></div>
+                    <h3>Calcinha Vinho</h3>
+                    <p>Tamanho P e M</p>
+                    <p>
+                        R$
+                        <span class="bold">25,00</span>
+                    </p>
+                    <a href="https://wa.me/5512991945916" class="btn">Comprar</a>
+                </div>
+                <div class="card">
+                    <div class="product-image" id="img7"></div>
+                    <h3>Calcinha Azul Jade</h3>
+                    <p>Tamanho P e M</p>
+                    <p>
+                        R$
+                        <span class="bold">25,00</span>
+                    </p>
+                    <a href="https://wa.me/5512991945916" class="btn">Comprar</a>
+                </div>
+                <div class="card">
+                    <div class="product-image" id="img8"></div>
+                    <h3>Calcinha Azul bebê</h3>
+                    <p>Tamanho P e M</p>
+                    <p>
+                        R$
+                        <span class="bold">25,00</span>
+                    </p>
+                    <a href="https://wa.me/5512991945916" class="btn">Comprar</a>
+                </div>
+                <div class="card">
+                    <div class="product-image" id="img9"></div>
+                    <h3>Calcinha Verde limão</h3>
+                    <p>Tamanho P e M</p>
+                    <p>
+                        R$
+                        <span class="bold">25,00</span>
+                    </p>
+                    <a href="https://wa.me/5512991945916" class="btn">Comprar</a>
+                </div>
+            </section>
+           
+        
+    </main>
+
+<footer>
+    <ul class="social-icons">
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+      </ul>
+    <strong><p>Todos os direitos reservados &copy; 2023 Luanny Santos</p></strong>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-9X9ALoBq+3K1QdH1MwZrPtGZfZYnZGMjK+Ox4heGK4sBBtFJalRdA7wGBekTt+r3m3Z1W2GGKjBxX9Q58v7JhA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    function toggleDarkMode() {
+        var body = document.querySelector('body');
+        var button = document.querySelector('button');
+        body.classList.toggle('dark-mode');
+        if (body.classList.contains('dark-mode')) {
+            button.innerText = 'Modo Claro';
+        } else {
+            button.innerText = 'Modo Escuro';
+        }
+    }
+
+
+    const text = "Olá, seja bem vind@ a minha lojinha. Eu sou a Luanny Santos";
+    const typingSpeed = 100; // Velocidade de digitação em milissegundos
+    const waitTime = 5000; // Tempo de espera em milissegundos
+    const typingTextElement = document.getElementById("typing-text");
+
+function typeText() {
+  let currentText = "";
+  let i = 0;
+  const typingInterval = setInterval(() => {
+    currentText += text.charAt(i);
+    typingTextElement.innerText = currentText;
+    i++;
+    if (i === text.length) {
+      clearInterval(typingInterval);
+      setTimeout(() => {
+        typeText();
+      }, waitTime);
+    }
+  }, typingSpeed);
+}
+
+const whatsappLink = document.querySelector('a[href^="https://wa.me/5512982572507"]');
+  whatsappLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.open(e.target.href);
+ });
+
+typeText();
+
+
+
+      var imagens = ['Gif01.png', 'Gif02.png', 'Gif03.png', 'Gif04.png'];
+      var duracoes = [100, 100, 100, 4000];
+      var imagemAtual = 0;
+      var gifInterval;
+
+      // função para exibir a próxima imagem do GIF
+      function exibirProximaImagem() {
+        // atualiza a imagem de fundo da imagem lateral
+        var proximaImagem = imagens[imagemAtual];
+        document.getElementById('imagem-lateral').style.backgroundImage = 'url(' + proximaImagem + ')';
+
+        // atualiza o índice da próxima imagem
+        imagemAtual++;
+        if (imagemAtual >= imagens.length) {
+          imagemAtual = 0;
+        }
+      }
+
+      // função para iniciar o GIF
+      function iniciarGIF() {
+        // exibe a primeira imagem do GIF
+        exibirProximaImagem();
+
+        // define o intervalo de exibição das imagens
+        gifInterval = setInterval(exibirProximaImagem, duracoes[imagemAtual]);
+      }
+
+      // adiciona um listener para o evento "mouseover" na imagem lateral
+      document.getElementById('imagem-lateral').addEventListener('mouseover', iniciarGIF);
+      
+      // adiciona um listener para o evento "mouseout" na imagem lateral
+      document.getElementById('imagem-lateral').addEventListener('mouseout', function() {
+        // para o intervalo de exibição das imagens
+        clearInterval(gifInterval);
+
+        // exibe a primeira imagem do GIF novamente
+        document.getElementById('imagem-lateral').style.backgroundImage = 'url(' + imagens[0] + ')';
+        imagemAtual = 0;
+      });
+</script>
+</body>
+</html>

@@ -1,0 +1,351 @@
+#typing-text{
+    text-align: center;
+}
+.logo {
+        width: 100px;
+        height: 100px;
+        top: 0;
+        left: 0;
+        padding: 2px;
+        border: 7px;
+}
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+button {
+    background-color: #0056b3;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    float: right;
+}
+.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+}
+header {
+    background-color: #333;
+    color:#C13584;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+title{
+    text-align: center;   
+}
+main {
+    margin-top: 150;
+    margin: 60px;
+    padding-top: 100px;
+    padding-bottom: 100;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    height: calc(100% - 140px);
+}
+#my-image {
+  font-size: 40px;
+  height: 350px;
+  width: 200px;
+  position: fixed;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9998;
+  cursor: pointer;
+  background-image: url('minha-img.png');
+  background-size: cover; 
+}
+::selection {
+    background-color: #333;
+    color: #ffffff;
+}
+footer {
+    background-color: #333;
+    color: #1a1414;
+    padding: 1px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 3px solid #C13584;
+  }
+  
+  footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+/* estilo para a lista de ícones */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
+
+  /* estilo para cada item da lista de ícones */
+  .social-icons li {
+    margin: 0 10px;
+  }
+
+  /* estilo para cada link de ícone */
+  .social-icons li a {
+    color: white;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+
+  /* estilo para cada ícone de mídia social */
+  .social-icons li a i {
+    transition: all 0.3s ease;
+}
+/* estilo para o ícone do Instagram */
+.social-icons li:nth-child(1) a i {
+color: #C13584;
+}
+
+/* estilo para o ícone do Twitter */
+.social-icons li:nth-child(2) a i {
+color: #1DA1F2;
+}
+
+/* estilo para o ícone do Facebook */
+.social-icons li:nth-child(3) a i {
+color: #1877F2;
+}
+
+/* estilo para a animação hover do ícone */
+.social-icons li a:hover i {
+transform: scale(1.2);
+}
+
+/* estilo para o rodapé */
+footer {
+background-color: #333;
+color: rgb(39, 9, 9);
+text-align: center;
+padding: 0px;
+}
+
+/* estilo para a lista de ícones no rodapé */
+.footer-icons {
+display: block;
+
+list-style: none;
+padding: 0;
+margin-top: 20px;
+}
+
+/* estilo para cada item da lista de ícones no rodapé */
+.footer-icons li {
+margin: 0 10px;
+}
+
+/* estilo para cada link de ícone no rodapé */
+.footer-icons li a {
+color: white;
+font-size: 24px;
+display: block;
+justify-content: center;
+height: 40px;
+width: 40px;
+border-radius: 50%;
+transition: all 0.3s ease;
+}
+
+/* estilo para a animação hover do ícone no rodapé */
+.footer-icons li a:hover i {
+transform: scale(1.2);
+}
+
+img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+    0% {
+      transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+      transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+      transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+      transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+      transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+      transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+      transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+      transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+      transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+      transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+      transform: translate(1px, -2px) rotate(-1deg);
+    }
+  }
+  .whatsapp-icon {
+    font-size: 40px;
+    background-color: rgb(19, 161, 19);
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    top: 40%;
+    transform: translateY(-40%);
+    z-index: 9999;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.whatsapp-icon:hover{
+    transform: scale(1.1);
+}
+/* Cabeçalho */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvica;
+}
+header{
+    background-color: #333;
+    color: rgb(167, 48, 139);
+    padding: 10px;
+    border-bottom: 3px solid rgb(167, 48, 139);
+    position:fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+/* Grid de produto */
+.container {
+    min-height: 60vh;
+    padding: 50px;
+}
+.produts-container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.card {
+    width: 31%;
+    display: inline-block;
+    margin: 1% 1%;
+    padding: 15px;
+
+}
+.product-image{
+    height: 300px;
+    width: 300px;
+    margin-bottom: 10px;
+    background-position: center;
+    background-size: cover;
+}
+#img1{
+    background-image: url(loja01.png);
+}
+#img2{
+    background-image: url(loja02.png);
+}
+#img3{
+    background-image: url(loja03.png);
+}
+#img4{
+    background-image: url(loja04.png);
+}
+#img5{
+    background-image: url(loja05.png);
+}
+#img6{
+    background-image: url(loja06.png);
+}
+#img7{
+    background-image: url(loja07.png);
+}
+#img8{
+    background-image: url(loja08.png);
+}
+#img9{
+    background-image: url(loja09.png);
+}
+h3 {
+    margin-bottom: 10px;
+    color:#C13584;
+    border-left: 5px solid #115583;
+    padding-left: 7px;
+    font-size: 24px; 
+}
+.card p {
+    font-weight: 10px;
+}
+.bold{
+    font-weight: bold;
+}
+.btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #C13584;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    transition: 3s;
+}
+.btn:hover{
+    background-color: #115583;
+}
+      /* estilo para a imagem fixa na lateral direita */
+      #imagem-lateral {
+        position: fixed;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        width: 180px;
+        height: 180px;
+        background: url('Gif01.png') no-repeat center center;
+        background-size: contain;
+        cursor: pointer;
+      }
